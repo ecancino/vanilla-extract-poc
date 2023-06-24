@@ -18,10 +18,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "types": ["node","vitest/globals", "@testing-library/jest-dom"]
   },
   "include": [
-    "src"
+    "src",
+    "vite.config.ts", "tests/Button.test.tsx",
   ],
   "references": [
     {

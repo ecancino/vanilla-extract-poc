@@ -1,12 +1,14 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import App from "./App";
-import "./index.css";
+import './index.css'
 
-const rootElement = document.querySelector("#root") as HTMLElement;
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+
+import App from './App'
+
+const rootElement = document.querySelector('#root') as HTMLElement
 
 createRoot(rootElement).render(
   <StrictMode>
     <App />
   </StrictMode>
-);
+)

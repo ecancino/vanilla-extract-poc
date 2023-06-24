@@ -1,32 +1,36 @@
-import { app, card } from "./app.css";
-
-import Header from "./Header/Header";
-import Counter from "./Counter/Counter";
+import { app } from './app.css'
+import { Break, Card, Counter, Header, Link } from './components'
 
 export default function App() {
   return (
     <article className={app}>
       <Header />
 
+      <Link href="/">Hello!</Link>
+
       <main>
-        <div className={card}>
-          <Counter accent="neutral" size="small" onClick={console.log} />
+        <Card>
+          <Counter accent="neutral" size="small" />
           <Counter accent="neutral" />
           <Counter accent="neutral" size="large" />
+        </Card>
 
-          <hr />
+        <Break />
 
+        <Card>
           <Counter accent="brand" size="small" />
           <Counter accent="brand" />
           <Counter accent="brand" size="large" />
+        </Card>
 
-          <hr />
+        <Break />
 
+        <Card>
           <Counter accent="reverse" size="small" />
           <Counter accent="reverse" />
           <Counter accent="reverse" size="large" />
-        </div>
+        </Card>
       </main>
     </article>
-  );
+  )
 }
